@@ -48,11 +48,11 @@
         "interval": 7200,
         "format": " {}"
     },
-    "custom/weather" : {
+    "custom/weather": {
         "tooltip" : true,
         "format" : "{}",
         "interval" : 30,
-        "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
+        "exec" : "/home/kshitij/.config/waybar/scripts/waybar-wttr.py",
         "return-type" : "json"
     },
     "tray": {
@@ -106,8 +106,17 @@
         "format-source": " {volume}%",
         "format-source-muted": " Muted",
         "on-click": "pamixer --default-source -t",
-        "on-scroll-up": "pamixer --default-source -i 5",
-        "on-scroll-down": "pamixer --default-source -d 5",
+        "on-scroll-up": "pamixer --default-source -d 5",
+        "on-scroll-down": "pamixer --default-source -i 5",
         "scroll-step": 5
+    },
+    "network": {
+        "interval": 30,
+        "format-wifi": " {essid} ({signalStrength}%)", // Icon: wifi
+        "format-ethernet": " {ifname}", // Icon: ethernet
+        "format-disconnected": "⚠ Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}",
+        "on-click": "nm-connection-editor"
     }
+
 }

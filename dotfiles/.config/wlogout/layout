@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "~/.config/hypr/scripts/lock.sh",
+    "action" : "swaylock -C /home/kshitij/.config/swaylock/config",
     "text" : "Lock",
     "keybind" : "l"
 }

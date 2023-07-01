@@ -2,10 +2,11 @@
 
 configuration {
   show-icons: true;
-  icon-theme: "Papirus";
+  icon-theme: "ePapirus";
   display-drun: "";
   display-window: "﩯 ";
   display-combi: "  ";
 }
 //@theme "themes/sidetab-nord.rasi"
+//@theme "/home/kshitij/.config/rofi/themes/catppuccin-mocha.rasi"
 @theme "/home/kshitij/.config/rofi/themes/catppuccin-mocha.rasi"
