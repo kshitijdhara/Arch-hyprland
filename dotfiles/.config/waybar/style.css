@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Cartograph CF Nerd Font, monospace;
+    font-family: Source Code Pro, Semibold;
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
@@ -107,7 +107,8 @@ tooltip {
 }
 
 #clock {
-    color: #64b1f8;
+    color: #23226b;
+    background: #64b1f8;
     border-radius: 10px;
     margin-left: 5px;
     border-right: 0px;

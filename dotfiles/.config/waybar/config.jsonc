@@ -9,7 +9,7 @@
     "modules-left": [
         "clock",
         "custom/weather",
-        "wlr/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-center": ["hyprland/window"],
     "modules-right": [
@@ -25,28 +25,28 @@
     "hyprland/window": {
         "format": "{}"
     },
-    "wlr/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "on-click": "activate",
-        //"format": "{icon}",
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": [],
-            "6": [],
-            "7": [],
-            "8": [],
-            "9": [],
-            "10": []
-        }
-    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+		"on-click": "activate",
+		"format-icons": {
+//			"1": "一",
+//			"2": "二",
+//			"3": "三",
+//			"4": "四",
+//			"5": "五",
+			"urgent": "",
+			"active": "",
+			"default": "󰧞",
+    "sort-by-number": true
+   }
+},
     "custom/updates": {
         "exec": "(pacman -Qu ; yay -Qua) | wc -l",
         "interval": 7200,
-        "format": " {}"
+        "format": "⬇️ {}",
+        "tooltip-format": "{} updates"
     },
     "custom/weather": {
         "tooltip" : true,
@@ -66,7 +66,7 @@
     "backlight": {
         "device": "backlight",
         "format": "{icon} {percent}%",
-        "format-icons": ["", "", ""],
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-scroll-up": "brightnessctl set 1%+",
         "on-scroll-down": "brightnessctl set 1%-",
         "min-length": 6
@@ -81,7 +81,7 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""]
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
