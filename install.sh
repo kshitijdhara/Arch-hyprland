@@ -29,4 +29,4 @@ noto-fonts-emoji thunar thunar-archive-plugin
 paru -S code code-features code-marketplace
 
 # Theme Based
-paru -S colloid-gtk-theme-git papirus-icon-theme sddm-git swaylock-effects-git kvantum kvantum-theme-catppuccin-git
+paru -S colloid-gtk-theme-git papirus-icon-theme sddm-git swaylock-effects-git
